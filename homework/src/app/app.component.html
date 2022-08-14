@@ -1,0 +1,11 @@
+
+
+<input type="text"  placeholder="What would you like to do today? " #task/><button type="button" (click)=addtask(task.value)>Add</button> 
+
+<br>
+
+<ul *ngFor="let item of list">
+    <li>{{item.name}} <button (click)="removetask(item.id)">Delete</button></li>
+</ul>
+
+
